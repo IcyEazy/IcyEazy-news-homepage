@@ -1,0 +1,203 @@
+body{
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 400;
+    place-content: center;
+    color: black;
+    min-height: 100vh;
+}
+
+.container{
+    margin: 80px 60px;
+}
+
+.container .navbar .container-fluid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-fluid .collapse .navbar-nav{
+    word-spacing: 30px;
+    margin-left: 680px;
+}
+
+a{
+    color: black;
+}
+
+.top .top-a .top-a-text .top-a-text-b a, .bottom .bottom-div .bottom-text p:nth-child(2) a, .top-b div p a{
+    text-decoration: none;
+}
+
+.top{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blur{
+    opacity: 0.5;
+}
+
+.container-fluid .collapse .navbar-nav a:hover, .bottom-text p:nth-child(2) a:hover{
+    color: hsl(5, 85%, 63%);
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.top-a{
+    margin-right: 30px;
+}
+.top .top-a .top-a-img img{
+    width: 100%;
+}
+
+/* .top-a-img{
+    width: auto;
+    height: 100%;
+    border: 2px solid red;
+    background-image: url(./assets/images/image-web-3-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+
+.top-a-text{
+    display: flex;
+}
+
+.top-a-text-a p{
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.top-a-text-a{
+    padding-top: 20px;
+    flex-basis: 50%;
+}
+
+.top-a-text-b{
+    padding: 20px 30px 0 70px;
+    line-height: 30px;
+}
+
+.a-btn{
+    border: 2px solid hsl(5, 85%, 63%);
+    padding: 6px 20px;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+
+.a-btn:hover{
+    background-color: hsl(240, 100%, 5%);
+    border: 2px solid hsl(240, 100%, 5%);
+    color: white;
+    transition: 0.3s;
+}
+
+.top-b{
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    padding: 25px 20px;
+}
+
+h2{
+    color: hsl(35, 77%, 62%);
+}
+
+.top-b div p:first-child a{
+    color: white;
+    font-weight: 700;
+}
+
+.top-b div p a:hover{
+    color: hsl(35, 77%, 62%);
+    transition: 0.3s;
+}
+
+hr{
+    margin: 20px 0;
+}
+
+.bottom{
+    margin-top: 40px;
+}
+
+.bottom, .bottom-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-img img{
+    width: 100%;
+}
+
+/* .bottom-text{
+    height: 100%;
+} */
+
+.bottom-text p:first-child{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.bottom-text p:nth-child(2){
+    font-weight: 700;
+}
+
+.middle{
+    margin: 0 20px;
+}
+
+.a-b{
+    margin: 0 20px;
+}
+
+.a-c{
+    margin-left: 20px;
+}
+
+@media (max-width: 375px) {
+    .container{
+        margin: 40px;
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-a-text{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-a-text-b{
+        padding: 0;
+    }
+    .a-btn{
+        padding: 9px 25px;
+    }
+    .top-b{
+        margin: 30px 0 15px 0;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-a, .a-b, .a-c{
+        margin: 0;
+    }
+    .bottom-img img{
+        width: 100px;
+        margin-right: 20px;
+    }
+    .middle{
+        margin: 20px 0;
+    }
+    .container-fluid .collapse .navbar-nav{
+        word-spacing: 30px;
+        margin-left: 0;
+    }
+}
